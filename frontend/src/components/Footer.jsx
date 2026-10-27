@@ -8,9 +8,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-800">
           <div className="lg:col-span-4 space-y-4">
-            <h3 className="font-heading font-extrabold text-xl text-white">Happy Teeth Multan</h3>
+            <div className="bg-white rounded-xl p-2.5 inline-block">
+              <img
+                src="/assets/aistudio/HAPPY_TEETH_DENTAL_CLINIC_b252f782.png"
+                alt="Happy Teeth Dental Clinic Multan"
+                className="h-10 w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
+            </div>
             <p className="text-sm text-gray-300 italic">“Your Smile, Our Passion”</p>
-            <p className="text-xs text-gray-400">Gentle, sterile, and pain-free treatments under Dr. Muhammad Abubakar Malik (BDS).</p>
+            <p className="text-xs text-gray-400">Gentle, sterile, and pain-free treatments under Dr. Muhammad Abubakar Malik (BDS) on Jail Road, Multan.</p>
           </div>
           <div className="lg:col-span-4 space-y-3">
             <h4 className="font-heading font-bold text-sm uppercase text-tealPrimary">Quick Links</h4>

@@ -33,17 +33,13 @@ export default function Navbar() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-tealPrimary flex items-center justify-center text-white shadow-teal">
-                <Sparkles size={24} className="text-mint" />
-              </div>
-              <div>
-                <div className="flex items-center gap-2">
-                  <span className="font-heading font-extrabold text-xl md:text-2xl text-tealPrimary">Happy Teeth</span>
-                  <span className="bg-mintSoft text-tealDark font-semibold text-[10px] px-2 py-0.5 rounded-full uppercase">Multan</span>
-                </div>
-                <p className="text-[11px] text-softgray tracking-wider uppercase font-medium">Dental Clinic & Aesthetic Care</p>
-              </div>
+            <Link to="/" className="flex items-center gap-3 group">
+              <img
+                src="/assets/aistudio/HAPPY_TEETH_DENTAL_CLINIC_b252f782.png"
+                alt="Happy Teeth Dental Clinic Multan"
+                className="h-12 sm:h-14 w-auto object-contain transition-transform group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
             </Link>
 
             <nav className="hidden lg:flex items-center space-x-7 text-sm">
