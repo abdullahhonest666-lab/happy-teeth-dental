@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename);
 export default defineConfig({
   plugins: [react()],
   root: path.resolve(__dirname, 'frontend'),
+  publicDir: path.resolve(__dirname, 'public'),
   build: {
     outDir: path.resolve(__dirname, 'dist'),
     emptyOutDir: true,
