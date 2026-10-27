@@ -12,7 +12,8 @@ export default function Footer() {
               <img
                 src="/assets/aistudio/HAPPY_TEETH_DENTAL_CLINIC_b252f782.png"
                 alt="Happy Teeth Dental Clinic Multan"
-                className="h-10 w-auto object-contain"
+                className="w-[150px] h-[80px] object-contain"
+                style={{ width: '150px', height: '80px' }}
                 referrerPolicy="no-referrer"
               />
             </div>

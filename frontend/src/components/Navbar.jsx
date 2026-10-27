@@ -32,12 +32,13 @@ export default function Navbar() {
 
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center min-h-[90px] py-1">
             <Link to="/" className="flex items-center gap-3 group">
               <img
                 src="/assets/aistudio/HAPPY_TEETH_DENTAL_CLINIC_b252f782.png"
                 alt="Happy Teeth Dental Clinic Multan"
-                className="h-12 sm:h-14 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-[85px] w-[151px] object-contain transition-transform group-hover:scale-105"
+                style={{ height: '85px', width: '151px' }}
                 referrerPolicy="no-referrer"
               />
             </Link>
