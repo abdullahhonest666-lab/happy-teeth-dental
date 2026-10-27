@@ -1,0 +1,8 @@
+{
+  "name": "Happy Teeth Dental Clinic Multan",
+  "description": "Web portal for Happy Teeth Dental Clinic Multan led by Dr. Muhammad Abubakar Malik (BDS). Featuring online appointment booking, treatment showcase, staff admin dashboard, and patient inquiry management.",
+  "prompt": "Happy Teeth Dental Clinic Multan web application",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
