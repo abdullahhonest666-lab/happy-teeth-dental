@@ -7,11 +7,11 @@ export default function Doctor() {
     <div className="max-w-5xl mx-auto px-4 py-16 space-y-12">
       <div className="bg-white p-8 sm:p-12 rounded-3xl shadow-card border border-gray-100 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
         <div className="md:col-span-5 flex justify-center">
-          <div className="relative w-full max-w-[195px]">
+          <div className="relative w-full max-w-xs">
             <img
               src="/images/doctor-profile.jpg"
               alt="Dr. Muhammad Abubakar Malik BDS Dental Surgeon"
-              className="rounded-3xl object-contain w-full h-auto shadow-xl border-4 border-tealLight"
+              className="rounded-3xl object-cover h-96 w-full shadow-xl border-4 border-tealLight"
             />
             <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3 rounded-2xl shadow-md border border-gray-100 flex items-center justify-between">
               <div>

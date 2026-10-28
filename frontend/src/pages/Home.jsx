@@ -129,7 +129,7 @@ export default function Home() {
               <img
                 src="/images/doctor-profile.jpg"
                 alt="Dr. Muhammad Abubakar Malik BDS Dental Surgeon Multan"
-                className="w-[195px] h-[244px] object-contain rounded-2xl shadow-2xl border-4 border-white/30"
+                className="w-64 h-80 object-cover rounded-2xl shadow-2xl border-4 border-white/30"
               />
               <div className="absolute -bottom-3 -right-3 bg-white text-charcoal px-3 py-1.5 rounded-xl text-xs font-bold shadow-lg flex items-center gap-1.5">
                 <Sparkles size={14} className="text-tealPrimary" /> BDS Surgeon
@@ -174,7 +174,7 @@ export default function Home() {
             <img
               src="/images/smile-transformation-enhanced.jpg"
               alt="Cosmetic smile transformation at Happy Teeth Multan"
-              className="h-64 w-full object-contain bg-gray-50"
+              className="h-64 w-full object-cover bg-gray-50"
             />
             <div className="p-6 flex-grow flex flex-col justify-between">
               <div>
@@ -191,7 +191,7 @@ export default function Home() {
             <img
               src="/images/dental-treatment-enhanced.jpg"
               alt="Sterilized treatment room at Happy Teeth Dental Clinic"
-              className="h-64 w-full bg-gray-50 object-contain"
+              className="h-64 w-full bg-gray-50 object-cover"
             />
             <div className="p-6 flex-grow flex flex-col justify-between">
               <div>

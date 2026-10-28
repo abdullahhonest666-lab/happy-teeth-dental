@@ -66,7 +66,7 @@ export default function About() {
             <img
               src="/images/clinic-room-enhanced.jpg"
               alt="Happy Teeth Dental Clinic Facility and Sterile Instruments"
-              className="max-h-[320px] w-full object-contain"
+              className="h-[400px] w-full object-cover"
             />
             <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-xl text-xs font-bold text-tealDark shadow-sm flex items-center gap-1.5">
               <ShieldCheck size={14} className="text-tealPrimary" /> 100% Sterile Standards

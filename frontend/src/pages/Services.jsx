@@ -73,7 +73,7 @@ export default function Services() {
           <img
             src="/images/smile-transformation-enhanced.jpg"
             alt="Healthy smile result"
-            className="w-48 h-36 rounded-2xl border-2 border-white bg-gray-50 object-contain shadow-lg"
+            className="w-64 h-48 rounded-2xl border-2 border-white bg-gray-50 object-contain shadow-lg"
           />
         </div>
       </div>
