@@ -127,7 +127,7 @@ export default function Home() {
           <div className="lg:col-span-4 flex justify-center">
             <div className="relative">
               <img
-                src="/images/doctor-profile.jpg"
+                src="/images/doctor-profile-enhanced.jpg"
                 alt="Dr. Muhammad Abubakar Malik BDS Dental Surgeon Multan"
                 className="w-64 h-80 object-cover rounded-2xl shadow-2xl border-4 border-white/30"
               />
@@ -174,7 +174,7 @@ export default function Home() {
             <img
               src="/images/smile-transformation-enhanced.jpg"
               alt="Cosmetic smile transformation at Happy Teeth Multan"
-              className="h-64 w-full object-cover bg-gray-50"
+              className="h-64 w-full object-contain bg-gray-50"
             />
             <div className="p-6 flex-grow flex flex-col justify-between">
               <div>

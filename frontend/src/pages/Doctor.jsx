@@ -9,7 +9,7 @@ export default function Doctor() {
         <div className="md:col-span-5 flex justify-center">
           <div className="relative w-full max-w-xs">
             <img
-              src="/images/doctor-profile.jpg"
+              src="/images/doctor-profile-enhanced.jpg"
               alt="Dr. Muhammad Abubakar Malik BDS Dental Surgeon"
               className="rounded-3xl object-cover h-96 w-full shadow-xl border-4 border-tealLight"
             />
