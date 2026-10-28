@@ -1,6 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Phone, HeartPulse, ShieldCheck, Award, ArrowRight, CheckCircle2, Sparkles, MapPin } from 'lucide-react';
+import { Calendar, Phone, HeartPulse, ShieldCheck, Award, ArrowRight, CheckCircle2, Sparkles, MapPin, Star, ExternalLink } from 'lucide-react';
+
+const googleMapsUrl = 'https://www.google.com/maps/place/HAPPY+TEETH+DENTAL+CLINIC+MULTAN/@30.2077158,71.4437716,17z/data=!4m17!1m10!3m9!1s0x393b331292be5481:0x84a7282dadcfca8!2sHAPPY+TEETH+DENTAL+CLINIC+MULTAN!8m2!3d30.2077158!4d71.4437716!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11p04qycv1!3m5!1s0x393b331292be5481:0x84a7282dadcfca8!8m2!3d30.2077158!4d71.4437716!16s%2Fg%2F11p04qycv1?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D';
+
+const googleReviews = [
+  {
+    name: 'Umar Farooq Qureshi',
+    quote: '“The Dentist is very friendly and competent.”',
+    context: 'Shared his experience finding care for his brother.'
+  },
+  {
+    name: 'Lailma Azhar',
+    quote: '“Dr AbuBakr is very empathetic and extremely professional.”',
+    context: 'Praised the professional care and comfortable atmosphere.'
+  },
+  {
+    name: 'Zubair',
+    quote: '“Root canal treatment was planned and completed on same visit.”',
+    context: 'Described his sister’s visit for urgent dental treatment.'
+  }
+];
 
 export default function Home() {
   return (
@@ -46,12 +66,11 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <div className="relative mx-auto w-full max-w-[500px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <img
-                src="/images/hero_clinic_1793138868655.jpg"
+                src="/images/clinic-hero-enhanced.jpg"
                 alt="Happy Teeth Dental Clinic Multan Operatory"
-                className="object-cover h-[440px] w-full"
-                referrerPolicy="no-referrer"
+                className="object-contain h-auto max-h-[360px] w-full bg-white"
               />
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-lg flex items-center justify-between border border-gray-100">
                 <div className="flex items-center gap-3">
@@ -108,10 +127,9 @@ export default function Home() {
           <div className="lg:col-span-4 flex justify-center">
             <div className="relative">
               <img
-                src="/images/doctor_portrait_1793138869583.jpg"
+                src="/images/doctor-profile.jpg"
                 alt="Dr. Muhammad Abubakar Malik BDS Dental Surgeon Multan"
-                className="w-64 h-80 object-cover rounded-2xl shadow-2xl border-4 border-white/30"
-                referrerPolicy="no-referrer"
+                className="w-[195px] h-[244px] object-contain rounded-2xl shadow-2xl border-4 border-white/30"
               />
               <div className="absolute -bottom-3 -right-3 bg-white text-charcoal px-3 py-1.5 rounded-xl text-xs font-bold shadow-lg flex items-center gap-1.5">
                 <Sparkles size={14} className="text-tealPrimary" /> BDS Surgeon
@@ -154,10 +172,9 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
             <img
-              src="/images/happy_patient_smile_1793138869931.jpg"
+              src="/images/smile-transformation-enhanced.jpg"
               alt="Cosmetic smile transformation at Happy Teeth Multan"
-              className="h-64 w-full object-cover"
-              referrerPolicy="no-referrer"
+              className="h-64 w-full object-contain bg-gray-50"
             />
             <div className="p-6 flex-grow flex flex-col justify-between">
               <div>
@@ -172,10 +189,9 @@ export default function Home() {
 
           <div className="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
             <img
-              src="/images/clinic_facility_1793138869805.jpg"
+              src="/images/dental-treatment-enhanced.jpg"
               alt="Sterilized treatment room at Happy Teeth Dental Clinic"
-              className="h-64 w-full object-cover"
-              referrerPolicy="no-referrer"
+              className="h-64 w-full bg-gray-50 object-contain"
             />
             <div className="p-6 flex-grow flex flex-col justify-between">
               <div>
@@ -187,6 +203,46 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Google Reviews */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <span className="text-xs font-bold uppercase text-tealPrimary tracking-wider">Patient Reviews</span>
+          <h2 className="font-heading font-extrabold text-3xl text-charcoal mt-1">Kind Words from Google</h2>
+          <p className="text-sm text-softgray mt-2">A selection of reviews from our Google Maps listing.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {googleReviews.map((review) => (
+            <article key={review.name} className="bg-white rounded-3xl border border-gray-100 shadow-sm p-6 flex flex-col">
+              <div className="flex gap-1 text-amber-400 mb-4" aria-label="5 out of 5 stars">
+                {Array.from({ length: 5 }, (_, index) => <Star key={index} size={16} fill="currentColor" />)}
+              </div>
+              <blockquote className="font-heading font-semibold text-charcoal leading-relaxed flex-grow">
+                {review.quote}
+              </blockquote>
+              <p className="text-xs text-softgray mt-4">{review.context}</p>
+              <p className="text-sm font-bold text-charcoal mt-4">{review.name}</p>
+              <p className="text-[11px] text-softgray">Google review</p>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl bg-tealLight/60 p-5">
+          <div>
+            <p className="font-heading font-bold text-charcoal">4.9 out of 5 on Google</p>
+            <p className="text-xs text-softgray">Based on 54 reviews shown on the clinic listing.</p>
+          </div>
+          <a
+            href={googleMapsUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl bg-tealPrimary px-5 py-3 text-xs font-semibold text-white transition-colors hover:bg-tealDark"
+          >
+            <span>Read all Google reviews</span> <ExternalLink size={14} />
+          </a>
         </div>
       </section>
     </div>

@@ -71,10 +71,9 @@ export default function Services() {
         </div>
         <div className="shrink-0">
           <img
-            src="/images/happy_patient_smile_1793138869931.jpg"
+            src="/images/smile-transformation-enhanced.jpg"
             alt="Healthy smile result"
-            className="w-48 h-36 object-cover rounded-2xl shadow-lg border-2 border-white"
-            referrerPolicy="no-referrer"
+            className="w-48 h-36 rounded-2xl border-2 border-white bg-gray-50 object-contain shadow-lg"
           />
         </div>
       </div>

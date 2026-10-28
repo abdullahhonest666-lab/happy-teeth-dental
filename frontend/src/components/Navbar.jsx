@@ -49,7 +49,6 @@ export default function Navbar() {
               <NavLink to="/services" className={activeClass}>Services</NavLink>
               <NavLink to="/doctor" className={activeClass}>Dr. Abubakar Malik</NavLink>
               <NavLink to="/contact" className={activeClass}>Contact & Map</NavLink>
-              <NavLink to="/admin" className={activeClass}>Staff Portal</NavLink>
             </nav>
 
             <div className="hidden sm:flex items-center gap-3">
@@ -73,7 +72,6 @@ export default function Navbar() {
             <Link to="/services" onClick={() => setOpen(false)} className="block py-2">Services</Link>
             <Link to="/doctor" onClick={() => setOpen(false)} className="block py-2">Doctor Profile</Link>
             <Link to="/contact" onClick={() => setOpen(false)} className="block py-2">Contact</Link>
-            <Link to="/admin" onClick={() => setOpen(false)} className="block py-2">Staff Portal</Link>
             <Link to="/book" onClick={() => setOpen(false)} className="block py-2.5 text-center bg-coral text-white rounded-xl font-semibold">Book Appointment</Link>
           </div>
         )}

@@ -61,13 +61,12 @@ export default function About() {
           </div>
         </div>
 
-        <div className="lg:col-span-6">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+        <div className="lg:col-span-6 flex justify-center">
+          <div className="relative flex w-full max-w-[440px] items-center justify-center rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
             <img
-              src="/images/clinic_facility_1793138869805.jpg"
+              src="/images/clinic-room-enhanced.jpg"
               alt="Happy Teeth Dental Clinic Facility and Sterile Instruments"
-              className="rounded-3xl shadow-card h-[400px] w-full object-cover"
-              referrerPolicy="no-referrer"
+              className="max-h-[320px] w-full object-contain"
             />
             <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-xl text-xs font-bold text-tealDark shadow-sm flex items-center gap-1.5">
               <ShieldCheck size={14} className="text-tealPrimary" /> 100% Sterile Standards

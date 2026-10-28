@@ -26,7 +26,6 @@ export default function Footer() {
               <li><Link to="/" className="hover:text-white">Home</Link></li>
               <li><Link to="/services" className="hover:text-white">Dental Treatments</Link></li>
               <li><Link to="/book" className="hover:text-white">Book Appointment</Link></li>
-              <li><Link to="/admin" className="hover:text-white">Staff Admin Dashboard</Link></li>
             </ul>
           </div>
           <div className="lg:col-span-4 space-y-3">
