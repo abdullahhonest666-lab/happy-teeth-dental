@@ -37,7 +37,7 @@ export default function Navbar() {
               <img
                 src="/images/HAPPY_TEETH_DENTAL_CLINIC_b252f782.png"
                 alt="Happy Teeth Dental Clinic Multan"
-                className="h-[85px] w-[151px] object-contain transition-transform group-hover:scale-105"
+                className="h-16 sm:h-13 w-auto object-contain transition-transform group-hover:scale-105"
                 style={{ height: '85px', width: '151px' }}
                 referrerPolicy="no-referrer"
               />
